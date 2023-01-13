@@ -12,8 +12,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
 # 0. set mlflow environments
-os.environ["MLFLOW_S3_ENDPOINT_URL"] = "http://localhost:9000"
-os.environ["MLFLOW_TRACKING_URI"] = "http://localhost:5001"
+os.environ["MLFLOW_S3_ENDPOINT_URL"] = "http://mlflow-artifact-store:9000"
+os.environ["MLFLOW_TRACKING_URI"] = "http://mlflow-server:5000"
 os.environ["AWS_ACCESS_KEY_ID"] = "minio"
 os.environ["AWS_SECRET_ACCESS_KEY"] = "miniostorage"
 
